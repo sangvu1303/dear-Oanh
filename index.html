@@ -19,7 +19,9 @@
 	<body>
 		<h2>Ấn vào card nhé !!!</h2>
 		<div class="body">
-			<div class="birthdayCard">
+			<div
+				class="birthdayCard"
+				onclick="handleCardClick(this)">
 				<div class="cardFront">
 					<h3 class="happy">Chúc mừng năm mới</h3>
 					<div class="balloons">
@@ -35,8 +37,9 @@
 					<p contenteditable="true">
 						Chúc mừng năm mới bé yêu của anh. Chúc em năm 2024 ngày
 						càng xinh đẹp, học tốt, là cháu ngoan bác Hồ, con ngoan
-						trò giỏi :3. 
-                        Cảm ơn em đã đến bên anh vào năm 2023 và hi vọng rằng em vẫn sẽ bên anh tới tận sau này . Yêu em nhiều 
+						trò giỏi :3. Cảm ơn em đã đến bên anh vào năm 2023 và hi
+						vọng rằng em vẫn sẽ bên anh tới tận sau này . Yêu em
+						nhiều
 					</p>
 					<p
 						contenteditable="true"
@@ -53,5 +56,10 @@
 			</center>
 		</footer>
 		<script src="main.js"></script>
+		<script>
+			function handleCardClick(card) {
+				card.classList.add('cardClicked');
+			}
+		</script>
 	</body>
 </html>
